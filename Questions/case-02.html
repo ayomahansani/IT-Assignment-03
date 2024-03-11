@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <style>
+
+        header{
+            background-color: white;
+            border: 1px solid black;
+            width: 100vw;
+            height: 9vh;
+        }
+
+        #header-div1{
+            position: relative;
+        }
+
+        #ijse-pic-bacground{
+            position: absolute;
+
+            width: 180px;
+            height: 50px;
+
+            top: 50%;
+            left: 1%;
+        }
+
+        #horizontal-navigation{
+            position: absolute;
+
+            right: 1%;
+
+            text-align: right;
+            padding: 30px;
+            word-spacing: 20px;
+            font-size: 18px;
+        }
+
+        #about{
+            word-spacing: 0px;
+        }
+
+        footer{
+            background-color: dimgrey;
+            width: 100vw;
+            height: 7vh;
+        }
+
+        #footer-div1{
+            position: relative;
+        }
+
+        h4{
+            font-size: 18px;
+            color: white;
+
+            position: absolute;
+
+            top: 30%;
+            right: 50%;
+        }
+
+        section{
+            position: relative;
+
+            width: 100vw;
+            height: 93vh;
+        }
+
+        #leftside-navigation-bar{
+            background-color: rebeccapurple;
+            width: 20%;
+            height: 93vh;
+
+            position: absolute;
+        }
+
+        /*#left-navigation-div1{
+            position: relative;
+
+            width: 50%;
+            height: 93vh;
+        }
+
+        #vertical-navigation{
+            position: absolute;
+
+            top: 5%;
+            left: 20%;
+        }*/
+
+        #left-navigation{
+            position: absolute;
+            top: 50px;
+            left: 40px;
+            font-size: 18px;
+            font-family: arial;
+            color: white;
+        }
+
+        #hero-section-right-side{
+            position: absolute;
+
+            width: 80%;
+            height: 93vh;
+
+            left: 20%;
+        }
+
+        #image-div{
+            position: absolute;
+            right: 1px;
+            top: 10px;
+            width: 77vw;
+        }
+
+        .monkey-img{
+            display: inline-block;
+            margin: 0;
+            border: green solid 2px;
+            width: 25vw;
+            height: 30vh;
+
+        }
+
+        #paragraphs-div{
+            position: absolute;
+
+            top: 33%;
+            left: 1%;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<!--  header  -->
+<header>
+
+    <div id="header-div1">
+
+
+        <img src="assets/images/ijse.png" id="ijse-pic-bacground" title="ijse.lk" alt="ijse logo">
+
+
+        <nav id="horizontal-navigation">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Contacts</a>
+            <a href="#" id="about">About Us</a>
+        </nav>
+
+        <br>
+
+    </div>
+
+</header>
+
+<!--  hero section  -->
+<section>
+
+    <!--  hero section left side  -->
+    <div id="leftside-navigation-bar">
+
+        <!--<div id="left-navigation-div1">
+            <nav id="vertical-navigation">
+                <a href="#">Home</a>    <br><br>
+                <a href="#">Services</a>    <br><br>
+                <a href="#">Contacts</a>    <br><br>
+                <a href="#">About Us</a>    <br><br>
+            </nav>
+        </div>-->
+
+        <div id="left-navigation">
+            Home <br><br>
+            Services <br><br>
+            Contacts <br><br>
+            About Us <br><br>
+        </div>
+
+    </div>
+
+    <!--  hero section right side  -->
+    <div id="hero-section-right-side">
+
+        <div id="image-div">
+            <img src="assets/images/monkey.gif" class="monkey-img" alt="monkey swinging" title="monkey">
+            <img src="assets/images/monkey.gif" class="monkey-img" alt="monkey swinging" title="monkey">
+            <img src="assets/images/monkey.gif" class="monkey-img" alt="monkey swinging" title="monkey">
+        </div>
+
+        <div id="paragraphs-div">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at atque modi mollitia nisi obcaecati sed sunt? Adipisci beatae deserunt dolor eius laborum omnis quo repellendus sed, sit, vero voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at atque modi mollitia nisi obcaecati sed sunt? Adipisci beatae deserunt dolor eius laborum omnis quo repellendus sed, sit, vero voluptatem!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at atque modi mollitia nisi obcaecati sed sunt? Adipisci beatae deserunt dolor eius laborum omnis quo repellendus sed, sit, vero voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at atque modi mollitia nisi obcaecati sed sunt? Adipisci beatae deserunt dolor eius laborum omnis quo repellendus sed, sit, vero voluptatem!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at atque modi mollitia nisi obcaecati sed sunt? Adipisci beatae deserunt dolor eius laborum omnis quo repellendus sed, sit, vero voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at atque modi mollitia nisi obcaecati sed sunt? Adipisci beatae deserunt dolor eius laborum omnis quo repellendus sed, sit, vero voluptatem!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at atque modi mollitia nisi obcaecati sed sunt? Adipisci beatae deserunt dolor eius laborum omnis quo repellendus sed, sit, vero voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at atque modi mollitia nisi obcaecati sed sunt? Adipisci beatae deserunt dolor eius laborum omnis quo repellendus sed, sit, vero voluptatem!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at atque modi mollitia nisi obcaecati sed sunt? Adipisci beatae deserunt dolor eius laborum omnis quo repellendus sed, sit, vero voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at atque modi mollitia nisi obcaecati sed sunt? Adipisci beatae deserunt dolor eius laborum omnis quo repellendus sed, sit, vero voluptatem!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at atque modi mollitia nisi obcaecati sed sunt? Adipisci beatae deserunt dolor eius laborum omnis quo repellendus sed, sit, vero voluptatem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at atque modi mollitia nisi obcaecati sed sunt? Adipisci beatae deserunt dolor eius laborum omnis quo repellendus sed, sit, vero voluptatem!
+            </p>
+        </div>
+    </div>
+
+
+</section>
+
+<!--  footer  -->
+<footer>
+
+    <div id="footer-div1">
+        <h4>Developed By IJSE</h4>
+    </div>
+
+</footer>
+
+</body>
+</html>
