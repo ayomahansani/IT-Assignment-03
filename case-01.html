@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 03 - case 01</title>
+
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <style>
+
+        section{
+            width: 100vw;   /* vw --> To view on the full screen */
+            height: 100vh;  /* vh --> To view on the full screen */
+            border: 1px solid black;
+
+            position: relative;     /* To qualified the parent element */
+        }
+
+        div{  /* To avoid duplicating same codes */
+            width: 50%;
+            height: 50%;
+
+            position: absolute;     /* To change according to the parent qualified elements */
+        }
+
+        #div1{
+            background-color: red;
+            left: 0;    /* methanadi divs 4ma left top eke eka uda eka vatila thiyenne */
+        }
+
+        #div2{
+            background-color: yellowgreen;
+            right: 0px;
+        }
+
+        #div3{
+            background-color: orange;
+            bottom: 0px;
+        }
+
+        #div4{
+            background-color: hotpink;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        /* -------------- End of the creating main 4 colors squares ---------------- */
+
+
+        span{     /* To avoid duplicating same codes */
+            aspect-ratio: 1/1;
+            position: absolute;
+        }
+
+        #squareMain{
+            width: 15%;
+            background-color: white;
+
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+
+            margin: auto;
+        }
+
+        #circle1Main{
+            width: 10%;
+
+            background-color: red;
+            border: 1px solid red;
+            border-radius: 100px;
+
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+
+            margin: auto;
+        }
+
+        .circle-on-a-div{
+            width: 25%;
+
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 100px;
+
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+
+            margin: auto;
+        }
+
+        .square-on-a-div{
+            width: 40%;
+
+            background-color: red;
+            border: 1px solid red;
+
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+
+            margin: auto;
+        }
+
+        #corner-circle-div1{
+            width: 25%;
+
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 100px;
+
+            top: 0px;
+            left: 0px;
+            transform: translate(-50%, -50%);
+        }
+
+        #corner-circle-div2{
+            width: 25%;
+
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 100px;
+
+            top: 0px;
+            right: 0px;
+            transform: translate(+50%, -50%);
+        }
+
+        #corner-circle-div3{
+            width: 25%;
+
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 100px;
+
+            bottom: 0px;
+            left: 0px;
+            transform: translate(-50%, +50%);
+        }
+
+        #corner-circle-div4{
+            width: 25%;
+
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 100px;
+
+            bottom: 0px;
+            right: 0px;
+            transform: translate(+50%, +50%);
+        }
+
+        #corner-circle-top{
+            width: 10%;
+
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 100px;
+
+            top: 0px;
+            right: 50%;
+            transform: translate(+50%, -50%);
+        }
+
+        #corner-circle-bottom{
+            width: 10%;
+
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 100px;
+
+            bottom: 0px;
+            right: 50%;
+            transform: translate(+50%, +50%);
+        }
+
+        body{
+            overflow: hidden; /* oyage size eken eliyata yana okkoma hide karanna */
+        }
+
+    </style>
+
+</head>
+<body>
+
+<section>
+
+    <div id="div1">   <!-- red big square -->
+        <span class="circle-on-a-div">
+            <span class="square-on-a-div"></span>
+        </span>
+
+        <span id="corner-circle-div1"></span>
+    </div>
+
+    <div id="div2">   <!-- green big square -->
+        <span class="circle-on-a-div">
+              <span class="square-on-a-div"></span>
+          </span>
+
+        <span id="corner-circle-div2"></span>
+    </div>
+
+    <div id="div3">   <!-- orange big square -->
+        <span class="circle-on-a-div">
+            <span class="square-on-a-div"></span>
+        </span>
+
+        <span id="corner-circle-div3"></span>
+    </div>
+
+    <div id="div4">   <!-- pink big square -->
+        <span class="circle-on-a-div">
+            <span class="square-on-a-div"></span>
+        </span>
+
+        <span id="corner-circle-div4"></span>
+    </div>
+
+    <span id="squareMain"></span>
+
+    <span id="circle1Main"></span>
+
+    <span id="corner-circle-top"></span>
+
+    <span id="corner-circle-bottom"></span>
+
+</section>
+
+</body>
+</html>

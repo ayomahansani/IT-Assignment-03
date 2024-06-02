@@ -2,186 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Assignment 03 - case 01</title>
+    <title>IT-Assignment-03</title>
 
-    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="assets/normalize-css.css">
 
     <style>
 
         section{
-            width: 100vw;   /* vw --> To view on the full screen */
-            height: 100vh;  /* vh --> To view on the full screen */
+            width: 100vw;
+            height: 100vh;
+            background: #f1bc06;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        section>div{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        section>div>div{
+            width: 250px;
+            height: 200px;
+            background: black;
+            text-align: center;
             border: 1px solid black;
-
-            position: relative;     /* To qualified the parent element */
+            margin: 3rem;
+            position: relative;
         }
 
-        div{  /* To avoid duplicating same codes */
-            width: 50%;
-            height: 50%;
-
-            position: absolute;     /* To change according to the parent qualified elements */
-        }
-
-        #div1{
-            background-color: red;
-            left: 0;    /* methanadi divs 4ma left top eke eka uda eka vatila thiyenne */
-        }
-
-        #div2{
-            background-color: yellowgreen;
-            right: 0px;
-        }
-
-        #div3{
-            background-color: orange;
-            bottom: 0px;
-        }
-
-        #div4{
-            background-color: hotpink;
-            right: 0px;
-            bottom: 0px;
-        }
-
-        /* -------------- End of the creating main 4 colors squares ---------------- */
-
-
-        span{     /* To avoid duplicating same codes */
-            aspect-ratio: 1/1;
+        a{
             position: absolute;
-        }
-
-        #squareMain{
-            width: 15%;
-            background-color: white;
-
-            top: 0px;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-
+            color: white;
+            font-size: 20px;
+            top: 5rem;
+            right: 0;
+            left: 0;
             margin: auto;
         }
 
-        #circle1Main{
-            width: 10%;
-
-            background-color: red;
-            border: 1px solid red;
-            border-radius: 100px;
-
-            top: 0px;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-
-            margin: auto;
-        }
-
-        .circle-on-a-div{
-            width: 25%;
-
-            background-color: white;
-            border: 1px solid white;
-            border-radius: 100px;
-
-            top: 0px;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-
-            margin: auto;
-        }
-
-        .square-on-a-div{
-            width: 40%;
-
-            background-color: red;
-            border: 1px solid red;
-
-            top: 0px;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-
-            margin: auto;
-        }
-
-        #corner-circle-div1{
-            width: 25%;
-
-            background-color: white;
-            border: 1px solid white;
-            border-radius: 100px;
-
-            top: 0px;
-            left: 0px;
-            transform: translate(-50%, -50%);
-        }
-
-        #corner-circle-div2{
-            width: 25%;
-
-            background-color: white;
-            border: 1px solid white;
-            border-radius: 100px;
-
-            top: 0px;
-            right: 0px;
-            transform: translate(+50%, -50%);
-        }
-
-        #corner-circle-div3{
-            width: 25%;
-
-            background-color: white;
-            border: 1px solid white;
-            border-radius: 100px;
-
-            bottom: 0px;
-            left: 0px;
-            transform: translate(-50%, +50%);
-        }
-
-        #corner-circle-div4{
-            width: 25%;
-
-            background-color: white;
-            border: 1px solid white;
-            border-radius: 100px;
-
-            bottom: 0px;
-            right: 0px;
-            transform: translate(+50%, +50%);
-        }
-
-        #corner-circle-top{
-            width: 10%;
-
-            background-color: white;
-            border: 1px solid white;
-            border-radius: 100px;
-
-            top: 0px;
-            right: 50%;
-            transform: translate(+50%, -50%);
-        }
-
-        #corner-circle-bottom{
-            width: 10%;
-
-            background-color: white;
-            border: 1px solid white;
-            border-radius: 100px;
-
-            bottom: 0px;
-            right: 50%;
-            transform: translate(+50%, +50%);
-        }
-
-        body{
-            overflow: hidden; /* oyage size eken eliyata yana okkoma hide karanna */
+        section>div>div:hover{
+            background: rgba(0, 0, 0, 0.64);
+            transform: scale(1.1);
+            transition: 1s ease;
         }
 
     </style>
@@ -191,45 +58,19 @@
 
 <section>
 
-    <div id="div1">   <!-- red big square -->
-        <span class="circle-on-a-div">
-            <span class="square-on-a-div"></span>
-        </span>
+    <h1>IT-Assignment-03</h1>
 
-        <span id="corner-circle-div1"></span>
+    <div>
+        <div><a href="case-01.html">Case 01</a></div>
+        <div><a href="case-02.html">Case 02</a></div>
+        <div><a href="case-03.html">Case 03</a></div>
     </div>
 
-    <div id="div2">   <!-- green big square -->
-        <span class="circle-on-a-div">
-              <span class="square-on-a-div"></span>
-          </span>
-
-        <span id="corner-circle-div2"></span>
+    <div>
+        <div><a href="case-04.html">Case 04</a></div>
+        <div><a href="case-05.html">Case 05</a></div>
+        <div><a href="case-06.html">Case 06</a></div>
     </div>
-
-    <div id="div3">   <!-- orange big square -->
-        <span class="circle-on-a-div">
-            <span class="square-on-a-div"></span>
-        </span>
-
-        <span id="corner-circle-div3"></span>
-    </div>
-
-    <div id="div4">   <!-- pink big square -->
-        <span class="circle-on-a-div">
-            <span class="square-on-a-div"></span>
-        </span>
-
-        <span id="corner-circle-div4"></span>
-    </div>
-
-    <span id="squareMain"></span>
-
-    <span id="circle1Main"></span>
-
-    <span id="corner-circle-top"></span>
-
-    <span id="corner-circle-bottom"></span>
 
 </section>
 
